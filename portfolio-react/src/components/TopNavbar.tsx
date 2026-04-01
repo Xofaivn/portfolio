@@ -27,7 +27,7 @@ export function TopNavbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-white/10 backdrop-blur-xl">
-      <div className="mx-auto grid max-w-screen-xl grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-3">
+      <div className="mx-auto grid max-w-screen-xl grid-cols-[1fr_auto_1fr] items-center gap-3 px-4 py-5">
         <div />
         <nav className="flex items-center justify-center gap-2 overflow-x-auto">
           {items.map((item) => (
@@ -35,7 +35,7 @@ export function TopNavbar() {
               key={item.id}
               type="button"
               onClick={() => scrollToSection(item.id)}
-              className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold text-white/90 transition hover:bg-white/10"
+              className="inline-flex shrink-0 items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-semibold text-white/90 transition hover:bg-white/10"
             >
               {item.icon}
               {item.label}

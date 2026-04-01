@@ -24,7 +24,7 @@ export default function App() {
 
       <TopNavbar />
 
-      <main className="relative mx-auto max-w-screen-xl px-6 pb-10 pt-28 sm:pt-32">
+      <main className="relative mx-auto max-w-screen-xl px-6 pb-20 pt-28 sm:pt-32">
         <PersonalSection />
         <div className="h-10" />
         <InfoSection />
@@ -34,6 +34,7 @@ export default function App() {
         <StacksSection />
         <div className="h-10" />
         <ContactSection />
+        <div className="h-16" />
         <Footer />
       </main>
 
