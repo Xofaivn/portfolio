@@ -97,7 +97,7 @@ export const projects: Project[] = [
       vi: 'Hệ thống quản lý học tập với quản lý khóa học và đăng ký. Thiết kế schema cơ sở dữ liệu và diagram kiến trúc.',
     },
     tech: ['React', 'TypeScript', 'FastAPI', 'MySQL'],
-    githubUrl: 'https://github.com/Xofaivn/CNPM',
+    githubUrl: 'https://github.com/Xofaivn/lms-db',
   },
   {
     name: 'Tutor Support System',
@@ -106,7 +106,7 @@ export const projects: Project[] = [
       vi: 'Nền tảng hỗ trợ gia sư với đặt lịch, nhắn tin. Thiết kế UI/UX với Figma, giao diện phản hồi.',
     },
     tech: ['React', 'TypeScript', 'Tailwind CSS', 'Figma'],
-    githubUrl: 'https://github.com/Xofaivn/lms-db',
+    githubUrl: 'https://github.com/Xofaivn/CNPM',
   },
   {
     name: 'IoT System (Multidisciplinary Project)',
