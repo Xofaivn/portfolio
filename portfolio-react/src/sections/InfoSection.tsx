@@ -47,7 +47,7 @@ export function InfoSection() {
             <div className="flex flex-col gap-4 mb-3">
 
               <div className="border-t border-white/10 pt-3">
-                <p className="text-sm font-bold text-white/95 mb-1">{language === 'vi' ? 'Hiệu suất' : 'Performance'}</p>
+                <p className="text-sm font-bold text-white/95 mb-1">{language === 'vi' ? 'Học tập' : 'Performance'}</p>
                 <div className="flex items-center gap-2">
                   <p className="text-sm text-white/95">GPA</p>
                   <span className="text-sm font-semibold text-primary/90">{gpa}</span>
