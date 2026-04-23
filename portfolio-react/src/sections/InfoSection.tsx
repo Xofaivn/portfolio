@@ -26,7 +26,7 @@ export function InfoSection() {
           <h2 className="text-2xl font-bold text-white/95 sm:text-3xl">{t('sections.info.title')}</h2>
         </motion.div>
 
-        <div className="grid gap-4 md:grid-cols-1">
+        <div className="grid gap-4 md:grid-cols-2">
           <GlassCard>
             <div className="flex items-center gap-2 mb-3">
               <a href="https://hcmut.edu.vn/" target="_blank" rel="noopener noreferrer"

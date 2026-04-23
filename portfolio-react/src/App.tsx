@@ -11,13 +11,15 @@ import { StacksSection } from './sections/StacksSection';
 export default function App() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
+      {/* Night sky base */}
       <div
         aria-hidden="true"
-        className="fixed inset-0 -z-20 bg-gradient-to-br from-primary/35 via-secondary/15 to-black"
+        className="fixed inset-0 -z-20 bg-[#040917]"
       />
+      {/* Nebula/aurora overlays */}
       <div
         aria-hidden="true"
-        className="fixed inset-0 -z-20 bg-[radial-gradient(circle_at_10%_20%,rgba(0,53,47,0.40),transparent_42%),radial-gradient(circle_at_80%_15%,rgba(0,77,68,0.30),transparent_45%),radial-gradient(circle_at_30%_85%,rgba(0,53,47,0.22),transparent_40%)]"
+        className="fixed inset-0 -z-20 bg-[radial-gradient(ellipse_80%_40%_at_50%_0%,rgba(30,58,138,0.32),transparent),radial-gradient(ellipse_at_88%_85%,rgba(109,40,217,0.18),transparent_55%),radial-gradient(ellipse_at_5%_65%,rgba(0,150,136,0.12),transparent_50%)]"
       />
 
       <BokehBackground />

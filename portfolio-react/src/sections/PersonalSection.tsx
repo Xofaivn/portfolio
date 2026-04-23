@@ -16,27 +16,32 @@ export function PersonalSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
           transition={{ duration: 0.6 }}
-          className="rounded-3xl border border-white/10 bg-white/5 p-6 shadow-soft backdrop-blur-xl sm:p-10"
+          className="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-soft backdrop-blur-xl sm:p-12"
         >
-          <div className="flex flex-col items-start gap-8 md:flex-row md:items-start md:justify-between">
-            <div className="flex items-start gap-5">
-              <div className="relative h-28 w-24 shrink-0 overflow-hidden rounded-2xl ring-1 ring-white/10 sm:h-32 sm:w-28">
+          <div className="flex flex-col items-center gap-8 text-center sm:flex-row sm:items-center sm:text-left sm:gap-10">
+            <div className="shrink-0">
+              <div className="h-40 w-40 overflow-hidden rounded-full ring-2 ring-white/20 shadow-2xl shadow-black/60 sm:h-52 sm:w-52">
                 <img
                   src={avtImage}
                   alt={`${profile.name} avatar`}
-                  className="h-full w-full object-cover object-center"
+                  className="h-full w-full object-cover object-top"
                 />
               </div>
+            </div>
 
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-white/60">
-                  {profile.location}
-                </p>
-                <h1 className="mt-1 text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                  {profile.headline[language]}
-                </h1>
-                <p className="mt-3 text-sm text-white/70 sm:text-base">{t('sections.about.subtitle')}</p>
-              </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-widest text-white/40">
+                {profile.location}
+              </p>
+              <h1 className="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">
+                {profile.name}
+              </h1>
+              <p className="mt-1 text-base font-semibold text-cyan-300/80 sm:text-lg">
+                {profile.headline[language]}
+              </p>
+              <p className="mt-3 max-w-lg text-sm leading-relaxed text-white/60 sm:text-base">
+                {t('sections.about.subtitle')}
+              </p>
             </div>
           </div>
         </motion.div>
@@ -44,4 +49,3 @@ export function PersonalSection() {
     </section>
   );
 }
-
